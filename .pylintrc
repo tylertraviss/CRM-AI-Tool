@@ -1,3 +1,6 @@
 [MASTER]
 disable = 
     missing-docstring
+
+[REPORTS]
+fail-under=80
