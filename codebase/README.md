@@ -55,13 +55,14 @@ Sale class
 - Run main.py to see the example usage of the CRM system and analytics module.
 ## Dependencies
 Python 3.x
+PyTest
 
 ## Configuration
 Edit config.json to set up your email configuration for the EmailSender class.
 
 ```json
 {
-    "OPENAI_KEY": "Key for LLM Tasks",
+    "OPENAI_KEY": "Key for LLM Tasks (not used yet)",
     "emailRecepient": "Test email recepient",
     "emailSender": "Email sent by",
     "emailPassword": "Email encryption"

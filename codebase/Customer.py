@@ -1,4 +1,4 @@
-from Interaction import Interaction  # Assuming Interaction class is in a file named Interaction.py
+from .Interaction import Interaction
 
 class Customer:
     def __init__(self):
