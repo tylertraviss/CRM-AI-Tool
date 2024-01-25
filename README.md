@@ -4,7 +4,7 @@
 The CRMAnalytics application is a Python-based tool designed to analyze and provide insights into customer relationship management (CRM) data. It includes classes for managing customers, sales, interactions, and an analytics module (CRMAnalytics) for calculating various metrics.
 
 ## Files and Modules
-1. CRMAnalytics.py
+### CRMAnalytics.py
 CRMAnalytics class
 The main analytics module that calculates various metrics based on CRM data.
 Methods:
@@ -13,7 +13,7 @@ average_sale_amount: Calculate the average amount of all sales.
 total_customers: Get the total number of customers.
 sales_by_stage: Count the number of sales in each stage.
 interactions_by_type: Count the number of interactions by type.
-2. CRMSystem.py
+### CRMSystem.py
 CRMSystem class
 Manages customers and sales within the CRM system.
 Methods:
@@ -24,7 +24,7 @@ categorize_contacts: Categorize contacts based on a specified category.
 add_sale: Add a new sale to the CRM system.
 search_customers: Search for customers based on a keyword.
 filter_sales_by_stage: Filter sales by the specified stage.
-## 3. Customer.py
+### Customer.py
 Customer class
 Represents a customer in the CRM system.
 Methods:
@@ -32,20 +32,20 @@ Getters and setters for customer attributes.
 add_interaction: Add an interaction to the customer.
 add_sale: Add a sale to the customer.
 get_tags: Get customer tags.
-## 4. Email.py
+### Email.py
 EmailSender class
 Handles sending emails using SMTP.
 Reads email configuration from config.json.
 Methods:
 send_email: Send an email with the specified subject and body to the specified email address.
-## 5. Interaction.py
+### Interaction.py
 Interaction class
 Represents an interaction with a customer.
 Getters and setters for interaction attributes.
-## 6. main.py
+### main.py
 Example usage of the CRM system, creating customers, sales, and interactions.
 Example usage of the CRMAnalytics module to calculate and print various metrics.
-## 7. Sale.py
+### Sale.py
 Sale class
 Represents a sale in the CRM system.
 Getters and setters for sale attributes.
