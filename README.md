@@ -66,7 +66,7 @@ Edit config.json to set up your email configuration for the EmailSender class.
     "emailSender": "Email sent by",
     "emailPassword": "Email encryption"
 }
-
+```
 ## Usage
 Follow the examples in main.py to understand how to use the CRM system and analytics module.
 
