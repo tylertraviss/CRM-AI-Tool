@@ -11,10 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v3
-        with:
-          python-version: ${{ matrix.python-version }}
+      - name: List contents of Backend directory
+        run: ls Backend
 
       - name: Change directory to Backend and activate virtual environment
         run: |
