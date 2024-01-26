@@ -1,6 +1,4 @@
-from codebase.Interaction import Interaction
 from codebase.Customer import Customer
-import pytest
 
 def test_customer_creation():
 

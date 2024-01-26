@@ -2,7 +2,6 @@ from CRMSystem import CRMSystem
 from Interaction import Interaction
 from Sale import Sale
 from CRMAnalytics import CRMAnalytics
-import json
 
 # Example Usage:
 crm = CRMSystem()
@@ -47,6 +46,3 @@ for stage, count in analytics.sales_by_stage().items():
 print("Interactions by Type:")
 for interaction_type, count in analytics.interactions_by_type().items():
     print(f"  - {interaction_type}: {count} interactions")
-
-
-
