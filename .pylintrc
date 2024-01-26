@@ -1,11 +1,8 @@
 [MASTER]
 disable = 
-<<<<<<< Updated upstream
-    missing-docstring
+    missing-docstring,
+    import-error
 
 [REPORTS]
 fail-under=80
-=======
-    missing-docstring,
-    import-error
->>>>>>> Stashed changes
+    
