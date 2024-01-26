@@ -2,23 +2,25 @@ from flask import Flask, render_template, jsonify, request
 
 app = Flask(__name__)
 
-# Dictionary to store usernames and passwords (plaintext for demonstration)
-users = {'admin': 'password'}
+# Dictionary to store user information
+user_info = {'name': 'John Doe'}  # Default name for demonstration purposes
 
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/api/login', methods=['GET'])
-def login():
-    username = request.args.get('username', '')
-    password = request.args.get('password', '')
+@app.route('/api/userinfo', methods=['GET'])
+def get_user_info():
+    return jsonify(user_info)
 
-    # Check if the username exists
-    if username in users and users[username] == password:
-        return jsonify({'message': f'Welcome, {username}!'})
-    else:
-        return jsonify({'message': 'Invalid credentials'})
+@app.route('/api/setoption', methods=['POST'])
+def set_option():
+    data = request.json
+    selected_option = data.get('selectedOption', '')
+    # Process the selected option as needed
+    # For now, just update the user_info dictionary with the selected option
+    user_info['selectedOption'] = selected_option
+    return jsonify({'message': f'Selected option set to: {selected_option}'})
 
 if __name__ == '__main__':
     app.run(debug=True)

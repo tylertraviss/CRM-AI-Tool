@@ -1,4 +1,43 @@
+/* App.css */
+
+body {
+  margin: 0; /* Remove default body margin */
+}
+
 .App {
   text-align: center;
-  margin: 50px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+  background-color: #61dafb;
+  position: fixed; /* Fix the top bar position */
+  top: 0; /* Position at the top of the viewport */
+}
+
+.option {
+  cursor: pointer;
+}
+
+/* Additional styles for the welcome message and description */
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
 }
