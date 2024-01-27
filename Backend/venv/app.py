@@ -11,7 +11,7 @@ def index():
 
 @app.route('/api/userinfo', methods=['GET'])
 def get_user_info():
-    return jsonify(user_info)
+    return jsonify({**user_info})
 
 @app.route('/api/setoption', methods=['POST'])
 def set_option():

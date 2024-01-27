@@ -9,7 +9,9 @@ function App() {
         // Fetch user information from Flask when the component mounts
         fetch('/api/userinfo')
             .then(response => response.json())
-            .then(data => setName(data.name))
+            .then(data => {
+                setName(data.name);
+            })
             .catch(error => console.error('Error:', error));
     }, []);
 
@@ -22,9 +24,9 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <div className="top-bar">
-                    <div className="option" onClick={() => handleOptionChange('option1')}>Dashboard</div>
-                    <div className="option" onClick={() => handleOptionChange('option2')}>Customers</div>
-                    <div className="option" onClick={() => handleOptionChange('option3')}>Sales</div>
+                    <div className="Dashboard" onClick={() => handleOptionChange('Dashboard')}>Dashboard</div>
+                    <div className="Customers" onClick={() => handleOptionChange('Customers')}>Customers</div>
+                    <div className="Sales" onClick={() => handleOptionChange('Sales')}>Sales</div>
                 </div>
                 <h1>Welcome back, {name}!</h1>
                 <p>This is a simple landing page with options.</p>
