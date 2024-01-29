@@ -69,7 +69,16 @@ Edit config.json to set up your email configuration for the EmailSender class.
 }
 ```
 ## Usage
-Follow the examples in main.py to understand how to use the CRM system and analytics module.
+
+To run the back-end:
+```
+flask run
+```
+
+To run the front-end:
+```
+npm start
+```
 
 ## Note
 The application is designed for educational purposes and may require additional enhancements for production use.
