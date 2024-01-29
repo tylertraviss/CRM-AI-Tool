@@ -5,7 +5,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Dictionary to store user information
-user_info = {'name': 'John Doe'}  # Default name for demonstration purposes
+user_info = {'name': 'John Doe', 'selectedOption': '', 'companyName': 'Apple Inc'}
 
 @app.route('/')
 def index():
@@ -13,7 +13,7 @@ def index():
 
 @app.route('/api/userinfo', methods=['GET'])
 def get_user_info():
-    return jsonify({**user_info})
+    return jsonify(user_info)
 
 @app.route('/api/setoption', methods=['POST'])
 def set_option():
