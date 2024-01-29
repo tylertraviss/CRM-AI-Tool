@@ -1,6 +1,8 @@
 from flask import Flask, render_template, jsonify, request
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Dictionary to store user information
 user_info = {'name': 'John Doe'}  # Default name for demonstration purposes
@@ -23,4 +25,4 @@ def set_option():
     return jsonify({'message': f'Selected option set to: {selected_option}'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
