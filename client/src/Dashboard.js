@@ -18,8 +18,8 @@ const Dashboard = () => {
       {/* Three Number Metrics */}
       <div style={{ display: 'flex', justifyContent: 'space-around' }}>
         <Metric label="Total Sales" value="$10,000" />
-        <Metric label="Customers" value="500" />
-        <Metric label="Profit Margin" value="15%" />
+        <Metric label="Closing In Sales" value="$2 500" />
+        <Metric label="Leads" value="25" />
       </div>
 
       {/* Additional Dashboard Content */}
