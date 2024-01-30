@@ -1,9 +1,12 @@
 // App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
 import Customers from './Customers';
 import Sales from './Sales';
+import NavScrollExample from './NavScrollExample';
 import './App.css';
+
 
 function App() {
   const [userInfo, setUserInfo] = useState({
@@ -41,22 +44,23 @@ function App() {
     }
   };
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="top-bar">
-          <div className="Dashboard" onClick={() => handleOptionChange('Dashboard')}>Dashboard</div>
-          <div className="Customers" onClick={() => handleOptionChange('Customers')}>Customers</div>
-          <div className="Sales" onClick={() => handleOptionChange('Sales')}>Sales</div>
-        </div>
-{/*         <h1>Welcome back, {userInfo.name}!</h1>
-        <p>This is a simple landing page with options.</p> 
-        <p>Selected Option: {userInfo.selectedOption}</p> */}
-        {/* Render the selected page */}
-        {renderPage()}
-      </header>
-    </div>
-  );
-}
+  function App() {
+    // ... (rest of your App.js code)
+  
+    return (
+      <div className="App">
+        <header className="App-header">
+          {/* Replace your existing navigation with the new Bootstrap navigation */}
+          <NavScrollExample />
+  
+          {/* Render the selected page */}
+          {renderPage()}
+        </header>
+      </div>
+    );
+  }
+  
 
 export default App;
+
+
