@@ -14,16 +14,6 @@ const Metric = ({ label, value }) => (
 const Dashboard = () => {
   return (
     <div>
-        <p>Major Metrics</p>
-      {/* Three Number Metrics */}
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        <Metric label="Total Sales" value="$10,000" />
-        <Metric label="Closing In Sales" value="$2 500" />
-        <Metric label="Leads" value="25" />
-      </div>
-
-      {/* Additional Dashboard Content */}
-      <p>Upcoming Meetings</p>
     </div>
   );
 };

@@ -11,13 +11,13 @@ function NavScrollExample() {
     <Navbar expand="lg" className="bg-body-tertiary">
       {/* Add fluid property to make the container full-width */}
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">CRM Tool</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto" navbarScroll>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#home">Dashboard</Nav.Link>
+            <Nav.Link href="#about">Clients</Nav.Link>
+            <Nav.Link href="#contact">Sales</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control

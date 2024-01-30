@@ -6,6 +6,7 @@ import Customers from './Customers';
 import Sales from './Sales';
 import NavScrollExample from './NavScrollExample'; // Check this import path
 import './App.css';
+import CardEntity from './CardEntity';
 
 
 function App() {
@@ -47,11 +48,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* Replace your existing navigation with the new Bootstrap navigation */}
         <NavScrollExample />
+        <p></p>
+        <CardEntity title="John Smith" subtitle="Microsoft" text="This lead is close to being complete."/>
+        <p></p>
+        <CardEntity title="Tyler Adams" subtitle="Apple" text="This lead is close to being complete."/>
+        <p></p>
+        <CardEntity title="Bill Gates" subtitle="Microsoft" text="Still in progress."/>
+        
 
         {/* Render the selected page */}
-        {renderPage()}
+        { /* renderPage() */}
       </header>
     </div>
   );
