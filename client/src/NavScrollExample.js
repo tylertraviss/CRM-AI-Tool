@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // NavScrollExample.js
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
@@ -35,3 +36,5 @@ function NavScrollExample() {
 }
 
 export default NavScrollExample;
+=======
+>>>>>>> parent of e163e21 (navbar)

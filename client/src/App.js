@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
 import Customers from './Customers';
 import Sales from './Sales';
-import NavScrollExample from './NavScrollExample'; // Check this import path
+import NavScrollExample from './NavScrollExample';
 import './App.css';
 import CardEntity from './CardEntity';
 
@@ -45,6 +45,7 @@ function App() {
     }
   };
 
+<<<<<<< HEAD
   return (
     <div className="App">
       <header className="App-header">
@@ -63,6 +64,24 @@ function App() {
     </div>
   );
 }
+=======
+  function App() {
+    // ... (rest of your App.js code)
+  
+    return (
+      <div className="App">
+        <header className="App-header">
+          {/* Replace your existing navigation with the new Bootstrap navigation */}
+          <NavScrollExample />
+  
+          {/* Render the selected page */}
+          {renderPage()}
+        </header>
+      </div>
+    );
+  }
+  
+>>>>>>> parent of e163e21 (navbar)
 
 export default App;
 
