@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Dashboard from './Dashboard';
 import Customers from './Customers';
 import Sales from './Sales';
-import NavScrollExample from './NavScrollExample';
+import NavScrollExample from './NavScrollExample'; // Check this import path
 import './App.css';
 
 
@@ -44,22 +44,18 @@ function App() {
     }
   };
 
-  function App() {
-    // ... (rest of your App.js code)
-  
-    return (
-      <div className="App">
-        <header className="App-header">
-          {/* Replace your existing navigation with the new Bootstrap navigation */}
-          <NavScrollExample />
-  
-          {/* Render the selected page */}
-          {renderPage()}
-        </header>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="App">
+      <header className="App-header">
+        {/* Replace your existing navigation with the new Bootstrap navigation */}
+        <NavScrollExample />
+
+        {/* Render the selected page */}
+        {renderPage()}
+      </header>
+    </div>
+  );
+}
 
 export default App;
 
